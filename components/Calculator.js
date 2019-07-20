@@ -14,7 +14,6 @@ export default class Calculator extends React.Component {
 
   calculate(inputType, input) {
     const { result, operation, newNumber } = this.state;
-    console.log("result", result);
     if (inputType === "number") {
       if (result === 0 || operation === "") {
         this.setState({ result: Number(`${result}${input}`) });
@@ -77,7 +76,6 @@ export default class Calculator extends React.Component {
 
   render() {
     const { result, operation, newNumber } = this.state;
-    console.log(operation === "");
     const previsualization =
       operation != "" || operation === "="
         ? `${result} ${operation} ${newNumber}`
