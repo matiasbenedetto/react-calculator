@@ -1,5 +1,5 @@
-export default ({ character, onClick }) => (
-  <button onClick={onClick}>
+export default ({ character, handleClick }) => (
+  <button onClick={handleClick}>
     <style jsx>
       {`
         button {

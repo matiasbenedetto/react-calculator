@@ -97,39 +97,39 @@ export default class Calculator extends React.Component {
         </style>
         <Viewr result={`${result}`} previsualization={previsualization} />
         <div className="buttons">
-          <Button character={"0"} onClick={() => this.calculate("number", 0)} />
-          <Button character={"1"} onClick={() => this.calculate("number", 1)} />
-          <Button character={"2"} onClick={() => this.calculate("number", 2)} />
-          <Button character={"3"} onClick={() => this.calculate("number", 3)} />
-          <Button character={"4"} onClick={() => this.calculate("number", 4)} />
-          <Button character={"5"} onClick={() => this.calculate("number", 5)} />
-          <Button character={"6"} onClick={() => this.calculate("number", 6)} />
-          <Button character={"7"} onClick={() => this.calculate("number", 7)} />
-          <Button character={"8"} onClick={() => this.calculate("number", 8)} />
-          <Button character={"9"} onClick={() => this.calculate("number", 9)} />
+          <Button character={"0"} handleClick={() => this.calculate("number", 0)} />
+          <Button character={"1"} handleClick={() => this.calculate("number", 1)} />
+          <Button character={"2"} handleClick={() => this.calculate("number", 2)} />
+          <Button character={"3"} handleClick={() => this.calculate("number", 3)} />
+          <Button character={"4"} handleClick={() => this.calculate("number", 4)} />
+          <Button character={"5"} handleClick={() => this.calculate("number", 5)} />
+          <Button character={"6"} handleClick={() => this.calculate("number", 6)} />
+          <Button character={"7"} handleClick={() => this.calculate("number", 7)} />
+          <Button character={"8"} handleClick={() => this.calculate("number", 8)} />
+          <Button character={"9"} handleClick={() => this.calculate("number", 9)} />
           <Button
             character={"+"}
-            onClick={() => this.calculate("operator", "+")}
+            handleClick={() => this.calculate("operator", "+")}
           />
           <Button
             character={"-"}
-            onClick={() => this.calculate("operator", "-")}
+            handleClick={() => this.calculate("operator", "-")}
           />
           <Button
             character={"/"}
-            onClick={() => this.calculate("operator", "/")}
+            handleClick={() => this.calculate("operator", "/")}
           />
           <Button
             character={"X"}
-            onClick={() => this.calculate("operator", "x")}
+            handleClick={() => this.calculate("operator", "x")}
           />
           <Button
             character={"="}
-            onClick={() => this.calculate("operator", "=")}
+            handleClick={() => this.calculate("operator", "=")}
           />
           <Button
             character={"C"}
-            onClick={() => this.calculate("operator", "C")}
+            handleClick={() => this.calculate("operator", "C")}
           />
         </div>
       </div>
