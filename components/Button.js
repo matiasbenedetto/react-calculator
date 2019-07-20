@@ -8,6 +8,7 @@ export default ({ character, onClick }) => (
           color: darkblue;
           border: 1px solid cyan;
           cursor: pointer;
+          font-size: 1.4em;
         }
         button:hover {
           background: CornflowerBlue;
